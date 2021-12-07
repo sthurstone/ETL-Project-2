@@ -1,0 +1,29 @@
+CREATE TABLE NYC_AirBNB_Data (
+listing_id INT,
+reviews_per_month INT,
+summary TEXT,
+date DATE,
+price MONEY
+);
+
+CREATE TABLE Boston_AirBNB_Data (
+listing_id INT,
+reviews_per_month INT,
+summary TEXT,
+date DATE,
+price MONEY
+);
+
+--join tables 
+
+SELECT nyc_airbnb_data.listing_id, nyc_airbnb_data.reviews_per_month, nyc_airbnb_data.summary, nyc_airbnb_data.date,  nyc_airbnb_data.price
+FROM nyc_airbnb_data
+JOIN boston_airbnb_data
+ON boston_airbnb_data.listing_id = nyc_airbnb_data.listing_id;
+
+--confirm connection/data output (done in notebook,too)
+
+SELECT * FROM nyc_airbnb_data;
+
+SELECT * FROM boston_airbnb_data;
+
