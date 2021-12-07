@@ -26,3 +26,4 @@ a.	Connect Notebook to local host database - pgAdmin
 b.	Create a new Database in pgAdmin 
 c.	Prepare schema and create tables 
 d.	Run Notebook to populate data into the DB Tables  
+
